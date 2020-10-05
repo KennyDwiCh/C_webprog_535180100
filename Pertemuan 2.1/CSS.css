@@ -1,0 +1,60 @@
+p.isiteks{
+    color: cadetblue;
+    font-size: 20px;
+}
+#tesid{
+    color: chocolate;
+    border: 1px solid black
+}
+div > p {
+    color:wheat;
+    background:green;
+    padding:2px;
+    text-align: right;
+}
+div h1 {
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px hotpink;
+}
+h1 + h2 {
+    color :red
+}
+div~p{
+    background-color: gray;
+}
+body,h1,p,img,b{
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    padding:2px;
+}
+.satu{
+    letter-spacing: 3px;
+    word-spacing: 30px;
+}
+.h{
+border: 8px groove lightblue;
+padding: 20px;
+}
+.posisi{
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-top: auto;
+left: 0;
+right: 0;
+top: 100px;
+bottom: 0;
+}
+body{
+background-image: url('background angga.jpg');
+background-repeat: no-repeat;
+background-size: 1400px auto;
+}
+img{
+    float: right;
+}
