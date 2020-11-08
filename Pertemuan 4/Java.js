@@ -20,3 +20,43 @@ function ForLoop(iteration) {
         document.getElementById("oResult").innerHTML += str + "<br />";
     }   
 }
+var Person = {
+
+    Email: "",
+    NIM: "",
+    Nama: "",
+    Hobbies: [],
+
+    AddBio: function (pEmail, pNIM, pNama) { 
+        this.Email = pEmail;
+        this.NIM = pNIM;
+        this.Nama = pNama;
+    },
+
+    AddHobby: function (pHobby) { 
+        this.Hobbies.push(pHobby);
+    },
+
+    Write: function () {
+        var str = "Bio: " + this.Email + ", " + this.NIM + ", " + this.Nama;
+        var hobb = "Hobbies: ";
+        var item;
+        for (item of this.Hobbies) {
+            hobb += item + " ";
+        }
+        return str + " " + hobb;
+    }
+
+}
+
+function AddBioInfo(pEmail, pNIM, pNama) {
+    Person.AddBio(pEmail, pNIM, pNama);
+}
+
+function AddHobby(pHobby) {
+    Person.AddHobby(pHobby);
+}
+
+function LoadObject() {
+    document.getElementById("oResult").innerHTML = Person.Write();
+}
