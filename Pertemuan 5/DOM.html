@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Node</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <p id="myP">Klik tombol untuk mendapatkan Tipe node dari elemen ini.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myP").nodeType;
+    document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+    <button type="button" id="tombol"  >Click Me</button>
+    
+
+    <script>
+        function buttonClick(){
+            alert('button di klik fungsi');
+        }
+
+
+        document.getElementById('tombol').add   EventListener('click',buttonClick);
+
+    </script>
+<div>
+    <h1>JavaScript getElementsByTagName() Demo</h1>
+    <h2>First heading</h2>
+    <p>This is the first paragraph.</p>
+    <h2>Second heading</h2>
+    <p>This is the second paragraph.</p>
+    <h2>Third heading</h2>
+    <p>This is the third paragraph.</p>
+
+    <button id="btnCount">Count H2</button>
+</div>
+<div id="app">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="item">HTML</li>
+                    <li class="item">CSS</li>
+                    <li class="item highlight">JavaScript</li>
+                    <li class="item">TypeScript</li>
+                </ul>
+            </nav>
+            <h1>getElementsByClassName Demo</h1>
+        </header>
+         <section>
+            <article>
+                <h2 class="heading-secondary">Example 1</h2>
+            </article>
+            <article>
+                <h2 class="heading-secondary">Example 2</h2>
+            </article>
+        </section>
+    </div>
+<div>
+    <p>Please rate the service:</p>
+    <p>
+        <input type="radio" name="rate" value="Very poor"> Very poor
+        <input type="radio" name="rate" value="Poor"> Poor
+        <input type="radio" name="rate" value="OK"> OK
+        <input type="radio" name="rate" value="Good"> Good
+        <input type="radio" name="rate" value="Very Good"> Very Good
+    </p>
+    <p>
+        <button id="btnRate">Submit</button>
+    </p>
+</div>
+
+</body>
+</html>
